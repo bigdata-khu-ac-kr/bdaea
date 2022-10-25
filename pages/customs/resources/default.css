@@ -1,0 +1,41 @@
+.xn_commons_professor_channel_header {
+    width: 100%;
+    z-index: 1000;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    position: fixed;
+    clear: both;
+}
+
+#xn_commons_professor_channel {
+    width: 100%;
+    float: left;
+    position: absolute;
+    bottom: 30px;
+    top: 100px;
+    overflow: auto;
+}
+
+#xn_commons_professor_channel .content_wapper {
+    width: 980px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.xn_commons_professor_channel_bottom {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #9a9a9a;
+    background: #2d2d2d;
+    border-top: 1px solid #000;
+    padding: 10px 0px;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1000;
+    height: 10px;
+}

@@ -1,0 +1,42 @@
+/* ì–¸ì–´ë³„ font-family ì§€ì • */
+
+.ko {
+    font-family: Dotum, 'ë‹ì›€', 'Nanum Gothic', NanumGothic, 'ë‚˜ëˆ”ê³ ë”•', 'Malgun Gothic', 'ë§‘ì€ê³ ë”•', 'Apple SD Gothic Neo', Meiryo, sans-serif;
+}
+
+.jp {
+    font-family: Meiryo, ãƒ¡ã‚¤ãƒªã‚ª, 'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯', 'MS PGothic', Dotum, sans-serif;
+}
+
+.en {
+    font-family: Roboto, Arial, helvetica, APPLE SD Gothic Neo, , Montserrat, sans-serif;
+}
+
+/* ì–¸ì–´ë³„ body, table, input, textarea, select, button font-family ì§€ì • */
+
+.ko body,
+.ko table,
+.ko input,
+.ko textarea,
+.ko select,
+.ko button {
+    font-family: Dotum, 'ë‹ì›€', 'Nanum Gothic', NanumGothic, 'ë‚˜ëˆ”ê³ ë”•', 'Malgun Gothic', 'ë§‘ì€ê³ ë”•', 'Apple SD Gothic Neo', Meiryo, sans-serif;
+}
+
+.jp body,
+.jp table,
+.jp input,
+.jp textarea,
+.jp select,
+.jp button {
+    font-family: Meiryo, ãƒ¡ã‚¤ãƒªã‚ª, 'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯', 'MS PGothic', Dotum, sans-serif;
+}
+
+.en body,
+.en table,
+.en input,
+.en textarea,
+.en select,
+.en button {
+    font-family: Roboto, Arial, helvetica, APPLE SD Gothic Neo, Montserrat, sans-serif;
+}

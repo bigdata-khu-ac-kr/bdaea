@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml" class="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=300, initial-scale=1">
+    <meta name="imagetoolbar" content="no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <title>경희대학교 로그인</title>
+    <!--[if lt IE 10]>
+        <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <![endif]-->
+    <link rel="stylesheet" href="customs/resources/xe.min.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/xn.common.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/jquery-ui.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/default.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/content_manager_mobile_login-1.css" type="text/css" charset="UTF-8" media="all">
+
+</head>
+<body>
+<div id="header">
+    <h1 class="header_logo"><img src="customs/resources/login_logo.png"></h1>
+</div>
+<script language="javascript" type="text/javascript">
+    function getCookie(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+    }
+
+    function keyDown(e) {
+        var intKey = e.keyCode ? e.keyCode : e.whichCode;
+        if (intKey == 13) { //enter 키 입력시 로그인 가능
+            OnLogon();
+        }
+    }
+
+    function OnLogon() {
+        if (document.forms["form1"].login_user_id.value == "") {
+            alert("사용자 ID를 입력하세요");
+            return;
+        }
+        if (document.forms["form1"].login_user_password.value == "") {
+            alert("사용자의 로그온 비밀번호를 입력하세요");
+            return;
+        }
+
+                document.getElementById("login_form1_csrf_token").value = getCookie("xn_sso_csrf_token_for_this_login");
+
+        document.forms["form1"].action = "https://e-campus.khu.ac.kr/xn-sso/gw-cb.php?from=web_redirect&login_type=standalone&return_url=https%3A%2F%2Fkhcanvas.khu.ac.kr%2Flearningx%2Flogin";
+        document.forms["form1"].target = "_top";
+        document.forms["form1"].submit();
+    }
+</script>
+<div id="login_wapper">
+    
+
+        <form id="form1" name="form1" method="post">
+                        <input type="hidden" name="csrf_token" id="login_form1_csrf_token" value="" />
+            <div class="loginForm">
+            <div class="login_user">
+                <span class="box">
+                    <input id="login_user_id" type="text" name="login_user_id" tabindex="1" accesskey="u"
+                        autocomplete="off" placeholder="ID or 학번(사번)"
+                        onkeydown="javascript:keyDown(event)" >
+                </span>
+            </div>
+            <div class="pw_user">
+                <span class="box">
+                    <input id="login_user_password" name="login_user_password" tabindex="2" accesskey="p"
+                        type="password" autocomplete="off" placeholder="Password"
+                        onkeydown="javascript:keyDown(event)">
+                </span>
+            </div>
+            <div class="login_btn"><a href="javascript:OnLogon();"><span>LOGIN</span></a></div>
+            </div>
+            
+
+        </form>
+
+     <!-- class=login -->
+    
+    <div class="general_login">
+        <a href="https://khcanvas.khu.ac.kr/login/canvas"><button id="general_login_btn">일반로그인</button></a>
+    </div>
+    <div class="footerBtn">
+    <div class="btnLink">
+        <ul>
+            <div>1. <span>e-Campus는 Info21의 통합 아이디 또는 학번(사번)으로 로그인</span>이 가능합니다.</div>
+            <div>2. 통합 아이디 등록, 아이디/비밀번호 찾기는 Info21에서 가능합니다.</div>
+            <div>3. 경희대학교 <span>e-Campus는 통합아이디 등록 후 익일부터 사용 가능</span>합니다.</div>
+            <div>4. Info21 관련 사항은 정보처(031-201-3171~3)로 문의하시기 바랍니다.</div>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!--[if IE]>
+<script type="text/javascript">
+// IE8 is the new IE6. Patch up https://stackoverflow.com/questions/2949910/how-to-make-href-will-work-on-button-in-ie8
+document.getElementById('general_login_btn').onclick = function() {
+    document.location.href = 'https://khcanvas.khu.ac.kr/login/canvas';
+}
+</script>
+<![endif]-->

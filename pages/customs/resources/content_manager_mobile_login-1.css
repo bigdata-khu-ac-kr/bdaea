@@ -1,0 +1,326 @@
+/*====================== ê³µí†µì˜ì—­ =========================*/
+
+body {
+    margin: 0;
+}
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    border-top: 11px solid #9e1814;
+    display: table;
+}
+
+#header .header_logo {
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 600px;
+    height: 50px;
+    margin-top: 100px;
+    padding: 24px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#login_wapper {
+    margin: 0 auto;
+    width: 600px;
+}
+
+#login_wapper .loginForm {
+    padding: 50px 100px;
+    width: 400px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#login_wapper .login_user {
+    position: relative;
+    width: 55%;
+    padding: 0 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 9px 9px 0 0;
+    background: url(./id_ico.png) no-repeat left 10px center;
+}
+
+#login_wapper .pw_user {
+    padding: 0 30px;
+    width: 55%;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 9px 9px;
+    background: url(./pw_ico.png) no-repeat left 12px center;
+}
+
+#login_wapper .login_user .title,
+#login_wapper .pw_user .title {
+    float: left;
+    display: block;
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#login_wapper .login_user .box,
+#login_wapper .pw_user .box {
+    display: block;
+    width: 300px;
+}
+
+#login_wapper .login_user .box #login_user_type,
+#login_wapper .pw_user .box #login_user_type {
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#login_wapper .login_user .box input,
+#login_wapper .pw_user .box input {
+    border: 0px solid #c0c0c0;
+    padding: 12px;
+    width: 220px;
+    height: 18px;
+    background-color: #fff;
+    font-size: 16px;
+    /* iOS ì—ì„œ ë°•ìŠ¤ë¥¼ ì„ íƒí–ˆì„ ë•Œ zoom ë˜ì§€ ì•Šìœ¼ë ¤ë©´ font-sizeê°€ 16px ì´ê±°ë‚˜ 1em ì´ì–´ì•¼í•¨. */
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#login_wapper .login_user .select_user_org,
+#login_wapper .pw_user .select_user_org {
+    width: 458px;
+    height: 48px;
+    font-size: 16px;
+    padding: 7px;
+}
+
+#login_wapper .div_line {
+    width: 458px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 10px 0 20px 0;
+    border-bottom: 0px;
+    margin-left: 0px;
+}
+
+#login_wapper .login_btn {
+    position: relative;
+    float: right;
+    width: 30%;
+    top: -88px;
+    text-align: center;
+}
+
+#login_wapper .login_btn a {
+    display: block;
+    height: 75px;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #0A326E;
+    border-radius: 7px;
+    color: #fff;
+    padding: 13px 0 0 0;
+    margin: 0 0 0 20px;
+}
+
+#login_wapper .login_btn a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #1b2550;
+    border: 0;
+}
+
+#login_wapper .login_btn a span {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+#login_wapper table {
+    width: 100%;
+    text-align: center;
+}
+
+#login_wapper .footer {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#login_wapper .footer .ft_top {
+    margin-top: 24px;
+}
+
+#login_wapper .footer .ft_top a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
+
+#login_wapper .footer .ft_top .priv_privacy {
+    display: inline-block;
+    font-weight: 600;
+}
+
+#login_wapper .footer .ft_top .priv_email {
+    display: inline-block;
+}
+
+#login_wapper .footerBtn {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#login_wapper .footerBtn .btnLink {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #636363;
+}
+
+#login_wapper .footerBtn .btnLink ul {
+    padding: 0;
+    margin: 0;
+}
+
+#login_wapper .footerBtn .btnLink ul div {
+    display: inline-flex;
+}
+
+#login_wapper .footerBtn .btnLink ul div span {
+    font-weight: 600;
+    padding: 0 0 0 6px;
+}
+
+#login_wapper .general_login {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+#login_wapper .general_login button {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #eee;
+    padding: 10px 15px 10px 15px;
+    margin-top: -20px;
+}
+
+#login_wapper .general_login button:hover {
+    background: #aaa;
+    box-shadow: none;
+    color: #fff;
+    border: 1px solid #aaa;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+
+/*------------------------  ëª¨ë°”ì¼ì‚¬ì´ì¦ˆ width: 600px ì´í•˜ -----------------------------*/
+
+@media (max-width: 600px) {
+    #header {
+        height: 60px;
+    }
+    #header .header_logo {
+        width: 90%;
+        height: 60px;
+    }
+    #header .header_logo img {
+        height: 50px;
+    }
+    #login_wapper {
+        width: 100%;
+    }
+    #login_wapper .login_user {
+        width: 80%;
+        padding: 10px 40px;
+    }
+    #login_wapper .pw_user {
+        width: 80%;
+        padding: 10px 40px;
+    }
+    #login_wapper .login_user .box input,
+    #login_wapper .pw_user .box input {
+        font-size: 1.25rem;
+        width: 350px;
+    }
+    #login_wapper .general_login button {
+        padding: 15px 20px 15px 20px;
+        margin-top: -30px;
+        font-size: 1.15rem;
+    }
+    #login_wapper .general_login button:hover {
+        padding: 15px 20px 15px 20px;
+        margin-top: -30px;
+        font-size: 1.15rem;
+    }
+    #login_wapper .loginForm {
+        padding: 50px 0px;
+        width: 90%;
+        margin: auto;
+    }
+    #login_wapper .footerBtn {
+        width: 90%;
+    }
+    #login_wapper .footerBtn .btnLink {
+        font-size: 1.15rem;
+    }
+    #login_wapper .footerBtn .btnLink ul div {
+        display: block;
+        padding: 5px 0 5px 0;
+    }
+    #login_wapper .login_btn {
+        width: 100%;
+        float: none;
+        top: 20px;
+    }
+    #login_wapper .login_btn a {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+}
+
+/* END @media (max-width: 600px) */
